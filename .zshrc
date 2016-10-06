@@ -1,19 +1,21 @@
 #!/usr/bin/zsh
 
+source ~/.zplug/init.zsh
 
-## LANGUAGE ##
+## LANGUAGE and THEME ##
 case "$TERM" in
      "linux")
-          export LANG=C
-          ;;
+	export LANG=C
+        zplug "themes/wedisagree",   from:oh-my-zsh
+	;;
      *)
-          export LANG=ja_JP.UTF-8
+	export LANG=ja_JP.UTF-8
+	zplug "themes/agnoster",   from:oh-my-zsh
           ;;
 esac
 
 
-## tmux ##
-
+## TMUX ##
 if [[ ! -n $TMUX && $- == *l* ]]; then
   # get the IDs
   ID="`tmux list-sessions`"
@@ -33,10 +35,7 @@ if [[ ! -n $TMUX && $- == *l* ]]; then
 fi
 
 
-## zplug ##
-
-source ~/.zplug/init.zsh
-
+## ZPLUG ##
 zplug "zplug/zplug"
 zplug "plugins/git",   from:oh-my-zsh
 zplug "k4rthik/git-cal", as:command
@@ -85,8 +84,8 @@ zplug "b4b4r07/emoji-cli", \
 # local plugins
 zplug "~/dotfiles/zsh", from:local
 
+#high lights
 zplug "zsh-users/zsh-syntax-highlighting", nice:10
-zplug "themes/agnoster",   from:oh-my-zsh
 
 # Install plugins
 if ! zplug check --verbose; then
