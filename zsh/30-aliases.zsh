@@ -4,6 +4,8 @@ alias la='ls -A --color'
 alias l='ls -CF --color'
 alias less='less -R'
 
+alias off='shutdown -h now'
+alias rb='shutdown -r now'
 alias cdr='cd ~/projects/robo'
 
 #alias cp='cp -iv'
