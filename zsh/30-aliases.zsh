@@ -37,5 +37,5 @@ alias gspull='git subtree pull --prefix=$1 $2 master --squash'
 alias gspush='git subtree push --prefix=$1 $2 master --squash'
 alias fix_network='sudo service network-manager restart'
 alias uart='cu -l /dev/ttyUSB0 -s 115200'
-
+alias uart2='cu -l /dev/ttyUSB1 -s 115200'
 
