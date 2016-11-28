@@ -6,7 +6,7 @@ if [ ! -d $HOME/.zplug ]; then
 fi
 
 
-DOT_FILES=(.zshrc .bashrc .gdbinit .vimrc .nanorc .tmux.conf)
+DOT_FILES=(.zshrc .bashrc .gitattributes .gdbinit .vimrc .nanorc .tmux.conf)
 
 for file in ${DOT_FILES[@]}
 do
