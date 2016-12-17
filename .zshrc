@@ -36,11 +36,15 @@ fi
 
 
 ## ZPLUG ##
-zplug "zplug/zplug"
 zplug "plugins/git",   from:oh-my-zsh
 zplug "k4rthik/git-cal", as:command
+zplug "plugins/sudo", from:oh-my-zsh
+zplug "plugins/zsh_reload", from:oh-my-zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
+
+#zplug "modules/prompt", from:prezto
+#zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
 
 zplug "tcnksm/docker-alias", use:zshrc
 
@@ -85,7 +89,7 @@ zplug "b4b4r07/emoji-cli", \
 zplug "~/dotfiles/zsh", from:local
 
 #high lights
-zplug "zsh-users/zsh-syntax-highlighting", nice:10
+zplug "zsh-users/zsh-syntax-highlighting", defer:2
 
 # Install plugins
 if ! zplug check --verbose; then
