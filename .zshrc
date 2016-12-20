@@ -47,6 +47,7 @@ zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
 
 zplug "peco/peco", as:command, from:gh-r, use:"*amd64*"
+zplug "b4b4r07/zsh-gomi"
 zplug "hchbaw/auto-fu.zsh"
 #zplug "nojhan/liquidprompt"
 
