@@ -74,18 +74,6 @@ zplug "junegunn/fzf-bin", \
     use:"*darwin*amd64*"
 zplug "b4b4r07/enhancd"
 
-zplug "b4b4r07/79ee61f7c140c63d2786", \
-    from:gist, \
-    as:command, \
-    use:get_last_pane_path.sh
-
-# Support bitbucket
-zplug "b4b4r07/hello_bitbucket", \
-    from:bitbucket, \
-    as:command, \
-    hook-build:"chmod 755 *.sh", \
-    use:"*.sh"
-
 zplug "stedolan/jq", \
     from:gh-r, \
     as:command

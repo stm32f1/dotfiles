@@ -6,7 +6,7 @@ alias less='less -R'
 
 alias off='shutdown -h now'
 alias rb='shutdown -r now'
-alias cdr='cd ~/projects/robo'
+alias cdu='cd-gitroot'
 
 alias ..="cd .."
 alias ...="cd ../.."
