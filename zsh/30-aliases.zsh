@@ -8,6 +8,11 @@ alias off='shutdown -h now'
 alias rb='shutdown -r now'
 alias cdr='cd ~/projects/robo'
 
+alias ..="cd .."
+alias ...="cd ../.."
+alias ....="cd ../../.."
+alias .....="cd ../../../.."
+
 #alias cp='cp -iv'
 #alias mv='mv -iv'
 #alias rm='rm -iv'

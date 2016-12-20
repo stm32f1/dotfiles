@@ -38,10 +38,15 @@ fi
 ## ZPLUG ##
 zplug "plugins/git",   from:oh-my-zsh
 zplug "k4rthik/git-cal", as:command
+zplug "knu/zsh-git-escape-magic"
 zplug "plugins/sudo", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
+
+zplug "hchbaw/auto-fu.zsh"
+#zplug "nojhan/liquidprompt"
+zplug "supercrabtree/k"
 
 #zplug "modules/prompt", from:prezto
 #zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
