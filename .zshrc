@@ -39,14 +39,16 @@ fi
 zplug "plugins/git",   from:oh-my-zsh
 zplug "k4rthik/git-cal", as:command
 zplug "knu/zsh-git-escape-magic"
+zplug "supercrabtree/k"
+zplug "mollifier/cd-gitroot"
 zplug "plugins/sudo", from:oh-my-zsh
 zplug "plugins/zsh_reload", from:oh-my-zsh
 zplug "zsh-users/zsh-history-substring-search"
 zplug "zsh-users/zsh-completions"
 
+zplug "peco/peco", as:command, from:gh-r, use:"*amd64*"
 zplug "hchbaw/auto-fu.zsh"
 #zplug "nojhan/liquidprompt"
-zplug "supercrabtree/k"
 
 #zplug "modules/prompt", from:prezto
 #zplug "lib/clipboard", from:oh-my-zsh, if:"[[ $OSTYPE == *darwin* ]]"
