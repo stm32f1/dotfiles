@@ -19,6 +19,7 @@ done
 if [ ! -d ~/.local/share/fonts/RictyDiminished-for-Powerline ]; then
 	mkdir -p ~/.local/share/fonts/RictyDiminished-for-Powerline
 	git clone https://github.com/mzyy94/RictyDiminished-for-Powerline.git ~/.local/share/fonts/RictyDiminished-for-Powerline
+	fc-cache -fv
 fi
 
 if [ ! -d ~/.vim/bundle ]; then
